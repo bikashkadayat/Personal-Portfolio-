@@ -1,0 +1,67 @@
+export const projectsData = [
+    {
+        id: 1,
+        name: 'Nepal Internet Foundation Website',
+        description: "Ongoing website update, content management, and administration for NIF's official site (nif.org.np). Responsibilities include publishing news, programme updates, and digital inclusion content. Also involved in producing digital content such as news articles, monthly newsletters, and social media campaigns to communicate the foundation's mission.",
+        tools: ['WordPress', 'Canva', 'Adobe Photoshop', 'Social Media Tools'],
+        role: 'Web Developer & IT Specialist',
+        code: '',
+        demo: 'https://nif.org.np',
+    },
+    {
+        id: 2,
+        name: 'NIFN – Nepal Interledger Financial Network',
+        description: "Full-stack application enabling real-time financial interoperability across Nepal under a neutral open payment standards initiative by Nepal Internet Foundation. Built to support seamless financial transactions and interoperability using modern web technologies.",
+        tools: ['React.js', 'Node.js', 'PostgreSQL', 'Git', 'Docker', 'CI/CD'],
+        role: 'Full Stack Developer',
+        code: '',
+        demo: 'https://nifn.org.np',
+    },
+    {
+        id: 3,
+        name: 'IDEA Financial Cooperative Website',
+        description: "Developed a WordPress website for IDEA, a financial services cooperative. The site covers savings schemes, credit facilities, and member advisory services. Led site architecture, visual design, content management, and ensured user-friendly experience for members.",
+        tools: ['WordPress', 'Canva', 'Adobe Photoshop'],
+        role: 'Web Developer & Designer',
+        code: '',
+        demo: 'https://idea.com.np',
+    },
+    {
+        id: 4,
+        name: 'Bikram Shrestha Official Website',
+        description: "Created a personal portfolio website for Bikram Shrestha showcasing his roles in internet governance (NIF, ISOC Nepal, APNIC, ICANN) along with a creative portfolio featuring music, music videos, and photography. Focused on clean design and effective content presentation.",
+        tools: ['WordPress', 'Canva', 'Adobe Photoshop'],
+        role: 'Web Developer & Designer',
+        code: '',
+        demo: 'https://bikramshrestha.com.np',
+    },
+    {
+        id: 5,
+        name: 'Aba Dhukka – Empowering Girls & Women',
+        description: "Built a WordPress website for the Aba Dhukka initiative dedicated to empowering girls and women and ending period poverty. The platform serves as the main hub for advocacy campaigns and community outreach programs.",
+        tools: ['WordPress', 'Canva', 'Adobe Photoshop'],
+        role: 'Web Developer & Designer',
+        code: '',
+        demo: 'https://abadhukka.com.np',
+    },
+    {
+        id: 6,
+        name: 'Beauty Parlour Management System',
+        description: "Built a fully functional end-to-end Beauty Parlour Management System during internship. The system includes appointment booking, service catalogue, customer records, and admin dashboards. Translated real business requirements into a complete technical solution.",
+        tools: ['React.js', 'Node.js', 'PostgreSQL', 'Git'],
+        role: 'Full Stack Developer',
+        code: '',
+        demo: '',
+    },
+    {
+        id: 7,
+        name: 'Enabling Digitalization in the Musahar Community',
+        description: "Designed and delivered a comprehensive digital literacy curriculum for Grades 1–12 at two schools in Mahottari District. Conducted field-level needs assessments, taught basic computing, internet safety, and responsible social media use. Focused on building student confidence in digital tools.",
+        tools: ['Curriculum Design', 'Digital Literacy Training', 'Content Creation'],
+        role: 'Digital Literacy Program Lead',
+        code: '',
+        demo: '',
+    }
+];
+
+// Do not remove any property. Leave it blank instead as shown in the template.
