@@ -1,21 +1,19 @@
+"use client";
 // @flow strict
 
 import { personalData } from "@/utils/data/personal-data";
+import { useEffect, useState } from "react";
 import BlogCard from "../components/homepage/blog/blog-card";
 
-async function getBlogs() {
-  const res = await fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
+export default function BlogPage() {
+  const [blogs, setBlogs] = useState([]);
 
-  if (!res.ok) {
-    throw new Error('Failed to fetch data')
-  }
-
-  const data = await res.json();
-  return data;
-};
-
-async function page() {
-  const blogs = await getBlogs();
+  useEffect(() => {
+    fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
+      .then((res) => res.json())
+      .then((data) => setBlogs(data))
+      .catch(() => {});
+  }, []);
 
   return (
     <div className="py-8">
@@ -40,5 +38,3 @@ async function page() {
     </div>
   );
 };
-
-export default page;

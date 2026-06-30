@@ -1,9 +1,25 @@
+"use client";
 // @flow strict
+import { personalData } from "@/utils/data/personal-data";
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import BlogCard from './blog-card';
 
-function Blog({ blogs }) {
+function Blog() {
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    fetch(`https://dev.to/api/articles?username=${personalData.devUsername}`)
+      .then((res) => res.json())
+      .then((data) => {
+        const filtered = data
+          .filter((item) => item?.cover_image)
+          .sort(() => Math.random() - 0.5);
+        setBlogs(filtered);
+      })
+      .catch(() => {});
+  }, []);
 
   return (
     <div id='blogs' className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
